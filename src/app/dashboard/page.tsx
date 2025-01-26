@@ -49,6 +49,9 @@ const Page = async () => {
     },
   })
 
+  console.log(orders);
+  
+
   const lastWeekSum = await db.order.aggregate({
     where: {
       isPaid: true,
